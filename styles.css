@@ -1,0 +1,71 @@
+body {
+    font-family: "AvenirLTStd-Roman", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+nav {
+    height: 105px;
+    display: flex;
+}
+#logo-and-tabs {    
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo {
+    background-image: url("./images/mint-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 89px;
+    height: 56px;
+}
+
+#logo-link {
+   width: 194px; 
+   display: block;
+   height: 89px;
+}
+
+#login {
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+
+#signup {
+    font-weight: bold;
+}
+#centerpiece {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 690px;
+    height: 600px;
+}
+
+#signupBody {
+    display: flex;
+    background-color: white;
+    position: relative;
+    padding: 43px 50px 50px 50px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+    min-height: 330px;
+}
+
+.left-column{
+    flex: 2;
+}
+#right-column {
+    border-left: solid 1px lightgray;
+    flex: 1;
+}
+
+ul {
+    font-color: #333333;
+    padding-bottom: 12px;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+    float: right;
+}
+
