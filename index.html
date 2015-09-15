@@ -11,17 +11,17 @@
     <body>
         <div id='centerpiece'>
             <nav id='logo-and-tabs'>
-                <div id='logo'><a id='logo-link' href="www.mint.com"></a></div>
+                <div id='logo'><a id='logo-link' href="https://www.mint.com"></a></div>
                 <ul id='loginsignup'>
-                    <li id='login'>Log In</li>
-                    <li id='signup'>Sign Up</li>
+                    <li id='login'><a href="https://www.mint.com">Log In</a></li>
+                    <li id='signup'><a href="#signup">Sign Up</a></li>
                 </ul>
             </nav>
             <div id='signupBody'>
                 <h1 id="new-account">Create a new account</h1>
                 <div id='column-container'>
                     <div class='left-column'>
-                        <form id="form-signup" method="post">
+                        <form class="form-signup" method="post">
                             <ol>
                                 <li class="email">
                                     <label for="email">Your Email</label>
@@ -33,9 +33,9 @@
                                 </li>
                                 <li class="country">
                                     <label for="country">Country</label>
-                                    <select name="country">
-                                        <option value="USA" selected>USA</option>
-                                        <option value="Afghanistan">Afghanistan</option>
+                                    <select name="country" id="selectCountry">
+                                        <option value="USA" selected>United States</option>
+                                        <option value="Afghanistan">Canada</option>
                                     </select>
                                 </li>
                                 <li class="zipcode">
@@ -50,9 +50,15 @@
                                     <label for="password2">Confirm Password</label>
                                     <input type="password" id="password2" autocomplete="off" maxlength="32" />
                                 </li>
-                                <li class="termsCheckbox">terms checki box</li>
+                                <li class="termsCheckbox">
+                                    <input type="checkbox" id="formCheckBox" name="terms">
+                                    <label id="terms-label" for="formCheckBox">Yes, I agree to the Mint <a href="https://www.mint.com/how-it-works/security/terms/">Terms of Use</a></label>
+                                </li>
                             </ol>
-                            <div class="login">Login Button</div>
+                            <div class="login">
+                                <input type="submit" class="submit-button" value="SIGN UP">
+                            </div>
+                        </form>
                         <!--form -->
                     </div>
                     <div id='right-column'>
@@ -70,9 +76,23 @@
             </div>
         </div>
         <footer>
-        <div class="secondary-links"></div>
-        <div class="securityLinks"></div>
-        <p class="copyright"></p>
+            <div class="body-footer">
+                <div class="secondary-links">
+                    <ol>
+                        <li>Support Community</li>
+                        <li>Terms of Use</li>
+                        <li>Privacy</li>
+                        <li>Legal and Trademark Notices</li>
+                        <li>About Intuit</li>
+                    </ol>
+                    <div class="securityLinks">
+                        <ol>
+                            <li id="Norton"></li>
+                            <li id="Trustee"></li>
+                        </ol>
+                    </div>
+                <p class="copyright">© 2015 Intuit, Inc.  |  ph7057.13 - spa59.12</p>
+            </div>
         </footer>
     </body>
 </html>
