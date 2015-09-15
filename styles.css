@@ -13,7 +13,7 @@ nav {
 }
 
 #logo {
-    background-image: url("./images/mint-logo.svg");
+    background-image: url("https://images.mint.com/web-client/images/mint-logo.svg"); 
     background-repeat: no-repeat;
     background-position: center center;
     width: 89px;
